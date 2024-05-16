@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.example.myapplication.DataBase.LocalDatabase
 import com.example.myapplication.DataBase.UserEntity
+import com.example.myapplication.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityPersonalBinding
 import kotlinx.coroutines.CoroutineScope
@@ -35,6 +36,9 @@ class PersonalActivity : AppCompatActivity(){
         db = LocalDatabase.getInstance(applicationContext)!!
         title = "마이페이지"
 
+        //이미지 넣기
+        setImage()
+
         //유저정보 추가
         binding.addButton.setOnClickListener {
             if(filePath!=""){ //안비어있다면? 사진이 있을시.
@@ -56,7 +60,7 @@ class PersonalActivity : AppCompatActivity(){
 
         //취소
         binding.cancleBtn.setOnClickListener {
-            finish()
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         //이미지추가
@@ -157,6 +161,7 @@ class PersonalActivity : AppCompatActivity(){
     }
 
 
+    //유저 정보 저장
     private fun addUser() {
         val username = binding.name.text.toString()
         val userage = binding.age.text.toString()
@@ -166,6 +171,8 @@ class PersonalActivity : AppCompatActivity(){
         }
     }
 
+
+    //사진과 정보 저장
     private fun addUserWithImage(imageByteArray: ByteArray) {
         val username = binding.name.text.toString()
         val userage = binding.age.text.toString()
@@ -175,6 +182,7 @@ class PersonalActivity : AppCompatActivity(){
         }
     }
 
+    //그림 크기 자르기
     private fun calculateInSampleSize(fileUri: Uri, reqWidth: Int, reqHeight: Int): Int {
         val options = BitmapFactory.Options()
         options.inJustDecodeBounds = true

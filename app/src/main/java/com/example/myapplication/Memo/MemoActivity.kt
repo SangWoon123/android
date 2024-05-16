@@ -1,5 +1,6 @@
 package com.example.myapplication.Memo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,7 @@ class MemoActivity : AppCompatActivity(){
             val toast = Toast.makeText(this, "저장되었습니다", Toast.LENGTH_SHORT)
             toast.show()
             //DB저장 date,title,content,emotion
-            finish()
+            startActivity(Intent(this, MemoListActivity::class.java))
         }
 
         //평점 입력칸 추가
@@ -41,7 +42,7 @@ class MemoActivity : AppCompatActivity(){
         val DBdate = binding.date.text.toString()
 
         CoroutineScope(Dispatchers.IO).launch {
-            db.getMemoDao().insertMemo(MemoEntity(DBtitle,DBcontent,DBdate))
+            db.getMemoDao().insertMemo(MemoEntity(DBdate,DBtitle,DBcontent))
             //아직 평점은 안넣음
         }
     }
