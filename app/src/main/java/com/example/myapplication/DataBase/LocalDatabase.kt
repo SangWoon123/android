@@ -4,10 +4,14 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 
 @Database(
     entities = [UserEntity::class, MemoEntity::class], version = 1, exportSchema = false
 )
+@TypeConverters(RoomTypeConvert::class)
 abstract class LocalDatabase : RoomDatabase(){
     abstract fun getUserDao() : UserDao
     abstract fun getMemoDao() : MemoDao
@@ -32,3 +36,4 @@ abstract class LocalDatabase : RoomDatabase(){
     }
 
 }
+

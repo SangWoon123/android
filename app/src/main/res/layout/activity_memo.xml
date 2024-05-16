@@ -33,7 +33,6 @@
             android:hint="제목"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_marginHorizontal="10dp"
             android:textSize="30dp"
             android:id="@+id/title"

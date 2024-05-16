@@ -11,6 +11,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.example.myapplication.databinding.ImgdialogConfrimBinding
 
+
+//다이얼로그 : imgdialog 부분.
 class PersonalDialog : DialogFragment(){
     private var bindingg: ImgdialogConfrimBinding? = null
     private val binding get() = bindingg!!

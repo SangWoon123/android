@@ -59,10 +59,12 @@
             android:text="카메라"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint=""
             style="@style/dialog_check_button"
             />
 
     </LinearLayout>
+
+
+
 
 </LinearLayout>

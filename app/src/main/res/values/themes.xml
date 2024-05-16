@@ -12,7 +12,7 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
-        <item name="backgroundTint">#F44336</item>
+        <item name="backgroundTint">#FF5A5A</item>
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />

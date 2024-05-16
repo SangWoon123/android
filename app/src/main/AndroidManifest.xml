@@ -17,9 +17,15 @@
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
 
-        <activity android:name=".MemoActivity"
+        <activity android:name=".Memo.MemoActivity"
+            android:exported="false"
+            android:parentActivityName=".Memo.MemoListActivity"/>
+        <activity android:name=".Memo.MemoListActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Memo.ShowActivity"
+            android:exported="false"
+            android:parentActivityName=".Memo.MemoListActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

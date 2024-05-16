@@ -127,7 +127,7 @@ class PersonalActivity : AppCompatActivity(){
                 filePath = file.absolutePath
                 val photoURI: Uri = FileProvider.getUriForFile(
                     this,
-                    "com.example.final_app.fileprovider",
+                    "com.example.myapplication.fileprovider",
                     file
                 )
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)

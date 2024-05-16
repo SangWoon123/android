@@ -21,22 +21,22 @@ interface UserDao {
 @Dao
 interface MemoDao{
     @Insert
-    fun insertDiary(memo: MemoEntity)
-
-    @Query("SELECT * FROM memo") // 테이블의 모든 값을 가져와라
-    fun getAllDiary(): List<MemoEntity>
+    fun insertMemo(memo: MemoEntity)
 
     // 제목을 기반으로 메모 가져오는 쿼리
     @Query("SELECT * FROM memo WHERE title = :memoTitle")
-    suspend fun getDiaryByTitle(memoTitle: String): MemoEntity?
+    suspend fun getMemoByTitle(memoTitle: String): MemoEntity?
 
     @Query("SELECT title FROM memo")
-    fun getSetDiary(): List<String>
+    fun getSetMemo(): List<String>
+
+    @Query("SELECT id FROM memo")
+    fun getMemoID(): List<Int>
 
     @Update
-    fun updateDiary(memo: MemoEntity)
+    fun updateMemo(memo: MemoEntity)
 
     // 제목을 기반으로 메모 삭제하는 쿼리
     @Delete
-    suspend fun deleteDiaryById(memo: MemoEntity)
+    suspend fun deleteMemoById(memo: MemoEntity)
 }
