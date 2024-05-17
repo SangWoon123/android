@@ -12,6 +12,23 @@
         android:layout_weight="1"
         android:orientation="vertical">
         <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="날짜 : 2024-05-13"
+            android:textSize="20dp"
+            />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="5px"
+            android:background="@color/black"/>
+        <TextView
             android:hint="제목"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,6 +60,30 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center">
+        <View
+            android:layout_gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="8px"
+            android:background="@color/black"/>
+
+        <RatingBar
+            android:id="@+id/star"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:progressTint="@color/primary_color"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
 
         <View
             android:layout_gravity="center"

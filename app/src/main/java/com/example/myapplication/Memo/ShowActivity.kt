@@ -34,7 +34,7 @@ class ShowActivity : AppCompatActivity() {
                 // 가져온 메모 상세 내용을 TextView에 설정
                 binding.title.text = memoDetail?.title
                 binding.content.text = memoDetail?.content ?: "메모 내용이 없습니다."
-                //binding.happy.drawable = 소스 받기
+                binding.star.rating = memoDetail?.star?.toFloat() ?: 0.0f
             }
         }
 
