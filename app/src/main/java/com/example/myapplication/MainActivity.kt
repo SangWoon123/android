@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.example.myapplication.DataBase.LocalDatabase
 import com.example.myapplication.Memo.MemoListActivity
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         db = LocalDatabase.getInstance(applicationContext)!!
 
+        title = "오늘의 밥 메뉴 추천은?"
+
 
         //메인화면 내비게이션에 DB에 저장된 그림과 이름 넣기
         setImage()
@@ -40,14 +43,40 @@ class MainActivity : AppCompatActivity() {
             //마이페이지 이동
             startActivity(Intent(this, PersonalActivity::class.java))
         }
+
         binding.menuWorldcup.setOnClickListener {
             //월드컵 이동
         }
+        binding.worldcup.setOnClickListener {
+            //월드컵 이동
+        }
+
         binding.menuWheel.setOnClickListener {
             //돌림판 이동
         }
+        binding.wheel.setOnClickListener {
+            //돌림판 이동
+        }
+
         binding.menuMemo.setOnClickListener {
             startActivity(Intent(this,MemoListActivity::class.java))
+        }
+        binding.memo.setOnClickListener {
+            startActivity(Intent(this,MemoListActivity::class.java))
+        }
+
+
+        binding.tipMenu.setOnClickListener {
+            //팁 메뉴 화면 이동
+        }
+        binding.eMenu.setOnClickListener {
+            //E동 메뉴 화면 이동
+        }
+        binding.map.setOnClickListener {
+            //지도 이동
+        }
+        binding.random.setOnClickListener {
+            //랜덤 뽑기 화면 이동
         }
 
 

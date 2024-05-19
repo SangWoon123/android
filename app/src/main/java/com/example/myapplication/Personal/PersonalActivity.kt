@@ -44,7 +44,7 @@ class PersonalActivity : AppCompatActivity(){
             if(filePath!=""){ //안비어있다면? 사진이 있을시.
                 val file = File(filePath.toString())
                 val byteArray = file.readBytes()
-                Log.d("knh", byteArray.toString()) //되는지 확인하게 로그 찍어뵉
+                //Log.d("knh", byteArray.toString()) //되는지 확인하게 로그 찍어뵉
                 addUserWithImage(byteArray)
                 //안내 메시지
                 val toast = Toast.makeText(this, "저장되었습니다", Toast.LENGTH_SHORT)
@@ -88,7 +88,7 @@ class PersonalActivity : AppCompatActivity(){
                 bitmap?.let{
                     binding.userImageBtn.setImageBitmap(bitmap)
                 } ?: let{
-                    Log.d("knh","bitmap null")
+                    //Log.d("knh","bitmap null")
                 }
             }catch (e: Exception){
                 e.printStackTrace()
@@ -117,7 +117,7 @@ class PersonalActivity : AppCompatActivity(){
                 val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
                 intent.type = "image/*"
                 requestGallerLauncher.launch(intent)
-                Log.d("knh","갤러리 선택")
+                //Log.d("knh","갤러리 선택")
             }
             else if(conf=="C"){
                 val timeStamp: String =
@@ -137,7 +137,7 @@ class PersonalActivity : AppCompatActivity(){
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
                 requestCamreaFileLauncher.launch(intent)
-                Log.d("knh","카메라 선택")
+                //Log.d("knh","카메라 선택")
             }
         }
 

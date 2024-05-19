@@ -32,6 +32,7 @@ class ShowActivity : AppCompatActivity() {
             // UI 업데이트는 Main 스레드에서 수행되어야 함
             withContext(Dispatchers.Main) {
                 // 가져온 메모 상세 내용을 TextView에 설정
+                binding.date.text = memoDetail?.date
                 binding.title.text = memoDetail?.title
                 binding.content.text = memoDetail?.content ?: "메모 내용이 없습니다."
                 binding.star.rating = memoDetail?.star?.toFloat() ?: 0.0f
@@ -49,7 +50,7 @@ class ShowActivity : AppCompatActivity() {
                 }
                 // 삭제가 완료되면 현재 액티비티 종료
                 withContext(Dispatchers.Main) {
-                    val toast = Toast.makeText(applicationContext, "저장되었습니다", Toast.LENGTH_SHORT)
+                    val toast = Toast.makeText(applicationContext, "삭제되었습니다", Toast.LENGTH_SHORT)
                     toast.show()
                 }
             }

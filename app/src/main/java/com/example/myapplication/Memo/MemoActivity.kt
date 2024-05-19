@@ -18,12 +18,16 @@ class MemoActivity : AppCompatActivity(){
     private lateinit var db : LocalDatabase
     lateinit var binding: ActivityMemoBinding
     var mystar:Int=0
+    var date: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMemoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         db = LocalDatabase.getInstance(applicationContext)!!
+        date =intent.getStringExtra("date")
+        binding.date.text = date
+        Log.d("knh", date.toString())
 
         binding.save.setOnClickListener {
             addMemo()
@@ -39,7 +43,7 @@ class MemoActivity : AppCompatActivity(){
             // fromUser = 사용자에 의해 설정되었는지 여부
             setOnRatingBarChangeListener{ star, rating, fromUser ->
                 mystar = rating.toInt()
-                Log.d("knh",mystar.toString())
+                //Log.d("knh",mystar.toString())
             }
         }
 

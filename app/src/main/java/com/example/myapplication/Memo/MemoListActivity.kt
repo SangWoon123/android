@@ -30,6 +30,7 @@ class MemoListActivity : AppCompatActivity(){
         setContentView(binding.root)
 
         db = LocalDatabase.getInstance(applicationContext)!!
+        val intent =Intent(this,CalenderActivity::class.java)
 
         title = "평점 기록 리스트"
 
@@ -42,12 +43,13 @@ class MemoListActivity : AppCompatActivity(){
                 val adapter = MyAdapter(mutableMemo) //변경 가능한 리스트로 어댑터 생성
                 binding.memo.layoutManager = LinearLayoutManager(this@MemoListActivity)
                 binding.memo.adapter = adapter
-                Log.d("knh_data", mutableMemo.toString())
+                //Log.d("knh_data", mutableMemo.toString())
             }
         }
 
         binding.addBtn.setOnClickListener {
-            startActivity(Intent(this, MemoActivity::class.java)) //메모 작성으로 이동
+            intent.putExtra("request","memo") //캘린더로 이동
+            startActivity(intent)
         }
 
 

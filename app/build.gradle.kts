@@ -72,6 +72,8 @@ dependencies {
 
 dependencies {
     implementation("androidx.activity:activity-ktx:1.9.0")
+    implementation("com.github.prolificinteractive:material-calendarview:2.0.1")
+    implementation ("com.jakewharton.threetenabp:threetenabp:1.1.1")
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.12.0")

@@ -14,6 +14,22 @@
         <item name="android:textAlignment">center</item>
         <item name="backgroundTint">#FF5A5A</item>
     </style>
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="android:textColor">@drawable/calendar_selector_textcolor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@drawable/calendar_selector_textcolor</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CalendarWidgetHeader">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
 </resources>

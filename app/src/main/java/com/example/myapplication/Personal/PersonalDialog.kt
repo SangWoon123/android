@@ -36,14 +36,14 @@ class PersonalDialog : DialogFragment(){
             val intent = Intent(requireContext(), PersonalActivity::class.java)
             intent.putExtra("conf", "G")
             startActivity(intent)
-            Log.d("knh","갤러리 버튼 클릭")
+            //Log.d("knh","갤러리 버튼 클릭")
         }
         binding.CameraBtn.setOnClickListener {
             //카메라 접근
             val intent = Intent(requireContext(), PersonalActivity::class.java)
             intent.putExtra("conf", "C")
             startActivity(intent)
-            Log.d("knh","카메라 버튼 클릭")
+            //Log.d("knh","카메라 버튼 클릭")
         }
 
         return view

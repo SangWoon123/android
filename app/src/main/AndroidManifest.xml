@@ -12,20 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
-        <activity android:name=".Personal.PersonalActivity"
+        <activity
+            android:name=".Memo.CalenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Personal.PersonalActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".Memo.MemoActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Memo.MemoActivity"
             android:exported="false"
-            android:parentActivityName=".Memo.MemoListActivity"/>
-        <activity android:name=".Memo.MemoListActivity"
+            android:parentActivityName=".Memo.MemoListActivity" />
+        <activity
+            android:name=".Memo.MemoListActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Memo.ShowActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Memo.ShowActivity"
             android:exported="false"
-            android:parentActivityName=".Memo.MemoListActivity"/>
+            android:parentActivityName=".Memo.MemoListActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -45,6 +50,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
     </application>
+
 </manifest>
