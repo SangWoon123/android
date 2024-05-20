@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="날짜 : 2024-05-13"
+            android:textSize="20dp"
+            />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="5px"
+            android:background="@color/black"/>
+        <TextView
+            android:hint="제목"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="30dp"
+            android:id="@+id/title"
+            />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="5px"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:hint="내용 입력"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View
+            android:layout_gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="8px"
+            android:background="@color/black"/>
+
+        <RatingBar
+            android:id="@+id/star"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:progressTint="@color/primary_color"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="5px"
+            android:background="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="삭제"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/delete"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

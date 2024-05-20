@@ -13,7 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".worldcup.WorldCup16"
+            android:name=".Memo.CalenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Personal.PersonalActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Memo.MemoActivity"
+            android:exported="false"
+            android:parentActivityName=".Memo.MemoListActivity" />
+        <activity
+            android:name=".Memo.MemoListActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Memo.ShowActivity"
+            android:exported="false"
+            android:parentActivityName=".Memo.MemoListActivity" />
+
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name=".worldcup.PopupActivity"
             android:exported="false"/>
@@ -30,13 +52,24 @@
         <activity
             android:name=".worldcup.WorldCup4"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
         <activity
             android:name=".worldcup.WorldCup8"
             android:exported="false" />
+        <activity
+            android:name=".worldcup.WorldCup16"
+            android:exported="false" />
 
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

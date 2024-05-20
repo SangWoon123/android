@@ -1,18 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--메인화면 내용-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"
+        >
+        <GridLayout
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TIP메뉴"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/tip_menu"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:src="@drawable/chicken_icon"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="E동메뉴"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/e_menu"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:src="@drawable/rice_icon"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="지도"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/map"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:src="@drawable/map_icon"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="월드컵"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/worldcup"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:src="@drawable/worldcup_icon"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="돌림판"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/wheel"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:src="@drawable/wheel_icon"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="기록"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/memo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:src="@drawable/note_icon"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="10dp"
+                    />
+            </LinearLayout>
+        </GridLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/random"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="랜덤뽑기 바로가기"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/round_button"/>
+    </LinearLayout>
+
+
+    <!--네비게이션 바 내용-->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mypage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="75dp"
+                app:cardElevation="0dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_basic" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="username"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="2px"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/menu_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:text="마이페이지"/>
+
+        <TextView
+            android:id="@+id/menu_worldcup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:text="월드컵"/>
+        <TextView
+            android:id="@+id/menu_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:text="돌림판"/>
+
+        <TextView
+            android:id="@+id/menu_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:text="메모"/>
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

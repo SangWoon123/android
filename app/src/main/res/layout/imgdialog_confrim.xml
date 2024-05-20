@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_background"
+    android:backgroundTint="#1E1E1E"
+    android:gravity="center"
+    android:minWidth="400dp"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <TextView
+        android:id="@+id/dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="등록할 이미지를 선택해주세요."/>
+
+    <TextView
+        android:id="@+id/dialog_desc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#A3A3A3"
+        android:text="갤러리 혹은 카메라로 이미지 등록이 가능합니다."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Gellery_Btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:text="갤러리"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            style="@style/dialog_check_button"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Camera_Btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="카메라"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            style="@style/dialog_check_button"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
