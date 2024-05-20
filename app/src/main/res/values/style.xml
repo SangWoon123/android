@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/styles.xml -->
+<resources>
+    <!-- 기존 스타일이 있을 수 있으니 추가 -->
+    <style name="CustomButtonStyle">
+        <item name="android:background">@drawable/custom_button_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
