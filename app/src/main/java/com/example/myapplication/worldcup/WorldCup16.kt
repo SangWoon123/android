@@ -3,20 +3,19 @@ package com.example.myapplication.worldcup
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R
-import com.example.myapplication.databinding.ActivityWorldCupBinding
+import com.example.myapplication.databinding.ActivityWorldCup16Binding
 
 
 class WorldCup16 : AppCompatActivity() {
     private lateinit var menuManager: MenuManager
-    lateinit var binding: ActivityWorldCupBinding
+    lateinit var binding: ActivityWorldCup16Binding
     val selectedMenus = ArrayList<Menu>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWorldCupBinding.inflate(layoutInflater)
+        binding = ActivityWorldCup16Binding.inflate(layoutInflater)
         setContentView(binding.root)
         title = "저녁 메뉴 추천 월드컵"
 
@@ -25,13 +24,8 @@ class WorldCup16 : AppCompatActivity() {
     }
 
     private fun setupUI() {
-        binding.startButton.setOnClickListener {
-            binding.menuSelect.visibility = View.VISIBLE
-            binding.explain.visibility = View.VISIBLE
-            binding.startButton.visibility = View.INVISIBLE
-            menuManager.resetCurrentMenus()
-            showTwoMenus()
-        }
+        menuManager.resetCurrentMenus()
+        showTwoMenus()
     }
 
     private fun showTwoMenus() {

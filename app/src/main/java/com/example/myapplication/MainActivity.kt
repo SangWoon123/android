@@ -2,15 +2,16 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.graphics.BitmapFactory
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.DataBase.LocalDatabase
 import com.example.myapplication.Memo.MemoListActivity
 import com.example.myapplication.Personal.PersonalActivity
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.databinding.ActivityWorldCupReadyBinding
+import com.example.myapplication.worldcup.WorldCupReady
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.worldcup.setOnClickListener {
             //월드컵 이동
+            startActivity(Intent(this,WorldCupReady::class.java))
         }
 
         binding.menuWheel.setOnClickListener {

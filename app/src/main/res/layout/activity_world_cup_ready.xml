@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="저녁 메뉴 이미지"
+        android:src="@drawable/worldcup_icon"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="저녁 메뉴 추천 월드컵에\n 오신 것을 환영합니다!"
+        android:textColor="#FF6F00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="저녁 메뉴 추천 월드컵은 다양한 저녁 메뉴 중에서 최고의 메뉴를 찾기 위한 재미있고 간단한 방법입니다. \n 총 108가지의 저녁메뉴 중 랜덤으로 16강부터 시작합니다."
+        android:textColor="#757575"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFA726"
+        android:text="시작하기"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

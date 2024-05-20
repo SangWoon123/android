@@ -31,7 +31,6 @@
             android:name=".Memo.ShowActivity"
             android:exported="false"
             android:parentActivityName=".Memo.MemoListActivity" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -41,25 +40,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".worldcup.PopupActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".worldcup.WorldCupResult"
             android:exported="false" />
+
+        <activity
+            android:name=".worldcup.WorldCupReady"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".worldcup.WorldCup4"
             android:exported="false" />
-
         <activity
             android:name=".worldcup.WorldCup8"
             android:exported="false" />
         <activity
             android:name=".worldcup.WorldCup16"
             android:exported="false" />
-
 
         <provider
             android:name="androidx.core.content.FileProvider"

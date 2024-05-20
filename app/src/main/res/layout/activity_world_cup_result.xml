@@ -7,19 +7,13 @@
     tools:context=".MainActivity">
 
 
-    <Button
-        android:visibility="invisible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:text="저녁 메뉴 월드컴 시작하기" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="결승"
+        android:text="🎉결승"
         android:textSize="25dp"
+        android:layout_marginTop="50dp"
         android:textStyle="bold" />
 
     <TextView
@@ -27,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:text="선호하는 저녁메뉴 선택해주세요"
         android:textSize="25dp"
         />
@@ -59,6 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                style="@style/WorldCupButtonStyle"
                 android:text="메뉴 1 선택" />
 
         </LinearLayout>
@@ -82,6 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                style="@style/WorldCupButtonStyle"
                 android:text="메뉴 2 선택" />
 
         </LinearLayout>

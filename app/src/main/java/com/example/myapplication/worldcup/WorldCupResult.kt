@@ -1,12 +1,8 @@
 package com.example.myapplication.worldcup
 
 import android.content.Intent
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
-import com.example.myapplication.databinding.ActivityWorldCup4Binding
-import com.example.myapplication.databinding.ActivityWorldCupBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityWorldCupResultBinding
 
 class WorldCupResult : AppCompatActivity() {
