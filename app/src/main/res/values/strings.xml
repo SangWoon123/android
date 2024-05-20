@@ -25,4 +25,28 @@
         <item>11월</item>
         <item>12월</item>
     </string-array>
+    <string-array name="laty">
+        <item>37.3392807</item>
+        <item>37.338778</item>
+        <item>37.339693</item>
+        <item>37.341686</item>
+    </string-array>
+    <string-array name="lngx">
+        <item>126.7322373</item>
+        <item>126.732669</item>
+        <item>126.734836</item>
+        <item>126.732354</item>
+    </string-array>
+    <string-array name="agency_name">
+        <item>미가 식당</item>
+        <item>세미콘 식당</item>
+        <item>E동 레스토랑</item>
+        <item>TIP 지하식당</item>
+    </string-array>
+    <string-array name="price">
+        <item>6500원</item>
+        <item>6500원</item>
+        <item>6500원</item>
+        <item>5500원</item>
+    </string-array>
 </resources>

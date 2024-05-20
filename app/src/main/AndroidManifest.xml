@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- http 통신 api 사용 위한 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 위치 권한과 포그라운드 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -15,14 +19,25 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="hl2fbfg0t9" />
+
+        <activity
             android:name=".Rullet.RulletDialog"
             android:exported="false" />
         <activity
             android:name=".Rullet.RulletShowActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Rullet.RulletActivity"/>
         <activity
             android:name=".Rullet.RulletActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".RandomdrawActivity"
             android:exported="false" />

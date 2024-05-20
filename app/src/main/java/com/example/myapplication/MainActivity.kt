@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.map.setOnClickListener {
-            //지도 이동
+            startActivity(Intent(this, MapActivity::class.java))
         }
         binding.random.setOnClickListener {
             //랜덤 뽑기 화면 이동

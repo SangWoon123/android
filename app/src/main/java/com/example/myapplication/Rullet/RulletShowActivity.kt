@@ -75,10 +75,10 @@ class RulletShowActivity : AppCompatActivity() {
     /**
      * 데이터 담기
      */
-    private fun Any.generateWheelItems(item1:String?, item2: String?, item3: String?, item4: String?, item5: String?, item6: String?) {
+    private fun generateWheelItems(item1:String?, item2: String?, item3: String?, item4: String?, item5: String?, item6: String?) {
         wheelItems = ArrayList()
 
-        val d = resources.getDrawable(R.drawable.ic_launcher_foreground, null)
+        val d = resources.getDrawable(R.drawable.spot, null)
 
         val bitmap = drawableToBitmap(d)
 

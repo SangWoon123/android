@@ -7,14 +7,6 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".Rullet.RulletShowActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="result"
-        android:gravity="center"
-        android:layout_marginBottom="50dp"
-        android:id="@+id/result"
-        android:textSize="20dp"/>
 
     <com.bluehomestudio.luckywheel.LuckyWheel
         android:id="@+id/luck_wheel"
@@ -29,5 +21,6 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/round_button"
         android:text="시작"
+        android:textColor="@color/white"
         android:textSize="15sp" />
 </LinearLayout>
