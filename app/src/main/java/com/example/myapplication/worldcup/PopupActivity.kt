@@ -13,6 +13,8 @@ class PopupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        title="저녁 메뉴 월드 추천 월드컵"
+
         supportActionBar?.hide()
 
         binding = ActivityPopupBinding.inflate(layoutInflater)

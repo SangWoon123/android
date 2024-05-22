@@ -71,9 +71,11 @@
         </activity>
         <activity
             android:name=".worldcup.PopupActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".worldcup.WorldCupResult"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
 
         <activity
@@ -83,12 +85,15 @@
 
         <activity
             android:name=".worldcup.WorldCup4"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".worldcup.WorldCup8"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".worldcup.WorldCup16"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
 
         <provider

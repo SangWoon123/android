@@ -13,6 +13,7 @@ class WorldCupReady : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWorldCupReadyBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        title="저녁 메뉴 월드 추천 월드컵"
 
 
         binding.startButton.setOnClickListener {

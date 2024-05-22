@@ -7,14 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.DataBase.LocalDatabase
 import com.example.myapplication.Memo.MemoListActivity
 import com.example.myapplication.Personal.PersonalActivity
 import com.example.myapplication.Rullet.RulletActivity
-import com.example.myapplication.Rullet.RulletShowActivity
 import com.example.myapplication.databinding.ActivityMainBinding
-import com.example.myapplication.databinding.ActivityWorldCupReadyBinding
 import com.example.myapplication.worldcup.WorldCupReady
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
