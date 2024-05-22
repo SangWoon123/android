@@ -35,5 +35,6 @@ abstract class LocalDatabase : RoomDatabase(){
         }
     }
 
+
 }
 

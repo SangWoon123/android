@@ -57,6 +57,10 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".RulletHelpActivity"
+            android:exported="false"
+            android:parentActivityName=".Rullet.RulletActivity" />
+        <activity
             android:name=".Memo.ShowActivity"
             android:exported="false"
             android:parentActivityName=".Memo.MemoListActivity" />

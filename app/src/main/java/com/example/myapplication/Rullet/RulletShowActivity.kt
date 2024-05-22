@@ -17,6 +17,7 @@ import com.bluehomestudio.luckywheel.LuckyWheel
 import com.bluehomestudio.luckywheel.OnLuckyWheelReachTheTarget
 import com.bluehomestudio.luckywheel.WheelItem
 import com.example.myapplication.R
+import com.example.myapplication.RulletHelpActivity
 import com.example.myapplication.databinding.ActivityRulletShowBinding
 import java.util.Random
 
@@ -57,7 +58,6 @@ class RulletShowActivity : AppCompatActivity() {
                 val money = wheelItem.text  //결과.
 
                 // 메시지
-                //Toast.makeText(this@RulletShowActivity, money, Toast.LENGTH_SHORT).show()
                 RulletDialog(money).show(supportFragmentManager, "dialog")
                 
             }
@@ -82,12 +82,12 @@ class RulletShowActivity : AppCompatActivity() {
 
         val bitmap = drawableToBitmap(d)
 
-        wheelItems += WheelItem(Color.parseColor("#FFD700"), bitmap, item1)
-        wheelItems += WheelItem(Color.parseColor("#E91E63"), bitmap, item2)
-        wheelItems += WheelItem(Color.parseColor("#7CFC00"), bitmap, item3)
-        wheelItems += WheelItem(Color.parseColor("#ADFF2F"), bitmap, item4)
-        wheelItems += WheelItem(Color.parseColor("#FF8C00"), bitmap, item5)
-        wheelItems += WheelItem(Color.parseColor("#FAFAD2"), bitmap, item6)
+        wheelItems += WheelItem(Color.parseColor("#FFC107"), bitmap, item1)
+        wheelItems += WheelItem(Color.parseColor("#FF7043"), bitmap, item2)
+        wheelItems += WheelItem(Color.parseColor("#FFD54F"), bitmap, item3)
+        wheelItems += WheelItem(Color.parseColor("#FF9800"), bitmap, item4)
+        wheelItems += WheelItem(Color.parseColor("#F57C00"), bitmap, item5)
+        wheelItems += WheelItem(Color.parseColor("#FFD600"), bitmap, item6)
 
         // 점수판에 데이터 넣기
         luckyWheel.addWheelItems(wheelItems)
@@ -113,17 +113,4 @@ class RulletShowActivity : AppCompatActivity() {
         return bitmap
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menu?.add(0, 0, 0, "help")
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId){
-            0 -> {
-                //startActivity(Intent(this, RulletHelpActivity::class.java))
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
 }

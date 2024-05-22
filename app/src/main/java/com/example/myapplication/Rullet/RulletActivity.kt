@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.example.myapplication.R
+import com.example.myapplication.RulletHelpActivity
 import com.example.myapplication.databinding.ActivityRulletBinding
 
 class RulletActivity : AppCompatActivity() {
@@ -34,15 +35,14 @@ class RulletActivity : AppCompatActivity() {
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menu?.add(0, 0, 0, "help")
+        menuInflater.inflate(R.menu.total_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
-            0 -> {
-                //도움말 표시 예정
-                //startActivity(Intent(this, RulletHelpActivity::class.java))
+            R.id.help-> {
+                startActivity(Intent(this, RulletHelpActivity::class.java))
             }
         }
         return super.onOptionsItemSelected(item)

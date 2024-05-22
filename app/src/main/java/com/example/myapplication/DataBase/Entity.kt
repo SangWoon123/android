@@ -17,7 +17,7 @@ data class MemoEntity(
     val date : String,
     val title:String,
     val content:String?,
-    val star:Int? = null,
+    val star:Int? = null
 ){
     @PrimaryKey(autoGenerate = true) var id:Int=0
 }
