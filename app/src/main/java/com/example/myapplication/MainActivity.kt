@@ -2,6 +2,8 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.graphics.BitmapFactory
+import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -9,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.DataBase.LocalDatabase
 import com.example.myapplication.Memo.MemoListActivity
 import com.example.myapplication.Personal.PersonalActivity
+import com.example.myapplication.Rullet.RulletActivity
+import com.example.myapplication.Rullet.RulletShowActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.ActivityWorldCupReadyBinding
 import com.example.myapplication.worldcup.WorldCupReady
@@ -58,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.wheel.setOnClickListener {
             //돌림판 이동
+            startActivity(Intent(this,RulletActivity::class.java))
         }
 
         binding.menuMemo.setOnClickListener {
@@ -69,13 +74,15 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.tipMenu.setOnClickListener {
-            //팁 메뉴 화면 이동
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://ibook.tukorea.ac.kr/Viewer/menu02"))
+            startActivity(intent)
         }
         binding.eMenu.setOnClickListener {
-            //E동 메뉴 화면 이동
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://ibook.tukorea.ac.kr/Viewer/menu01"))
+            startActivity(intent)
         }
         binding.map.setOnClickListener {
-            //지도 이동
+            startActivity(Intent(this, MapActivity::class.java))
         }
         binding.random.setOnClickListener {
             //랜덤 뽑기 화면 이동
