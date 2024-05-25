@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.menuWorldcup.setOnClickListener {
             //월드컵 이동
+            startActivity(Intent(this,WorldCupReady::class.java))
         }
         binding.worldcup.setOnClickListener {
             //월드컵 이동
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.menuWheel.setOnClickListener {
             //돌림판 이동
+            startActivity(Intent(this,RulletActivity::class.java))
         }
         binding.wheel.setOnClickListener {
             //돌림판 이동
@@ -78,11 +80,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://ibook.tukorea.ac.kr/Viewer/menu01"))
             startActivity(intent)
         }
+        binding.menuMap.setOnClickListener {
+            startActivity(Intent(this, MapActivity::class.java))
+        }
         binding.map.setOnClickListener {
             startActivity(Intent(this, MapActivity::class.java))
         }
         binding.random.setOnClickListener {
             //랜덤 뽑기 화면 이동
+            startActivity(Intent(this, RandomdrawActivity::class.java))
         }
 
 

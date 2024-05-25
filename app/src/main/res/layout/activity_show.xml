@@ -13,13 +13,14 @@
         android:orientation="vertical">
         <TextView
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/kcchanbit"
             android:layout_width="match_parent"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:id="@+id/date"
             android:gravity="center"
             android:layout_margin="5dp"
-            android:text="날짜 : 2024-05-13"
+            android:text="2024-05-13"
             android:textSize="20dp"
             />
 
@@ -29,12 +30,13 @@
             android:layout_height="5px"
             android:background="@color/black"/>
         <TextView
-            android:hint="제목"
+            android:hint=" 제목"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_marginHorizontal="20dp"
             android:textSize="30dp"
+            android:fontFamily="@font/kcchanbit"
             android:id="@+id/title"
             />
 
@@ -46,12 +48,13 @@
 
         <TextView
             android:id="@+id/content"
+            android:fontFamily="@font/kcchanbit"
             android:layout_gravity="center_horizontal"
             android:layout_width="380dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:textSize="20dp"
-            android:hint="내용 입력"
+            android:hint=" 내용 입력"
             />
     </LinearLayout>
 
@@ -99,8 +102,10 @@
             android:layout_marginLeft="20dp"
             android:text="삭제"
             android:layout_margin="10dp"
+            android:textColor="@color/white"
             android:background="@drawable/round_button"
             android:textSize="18dp"
+            android:fontFamily="@font/kcchanbit"
             android:textStyle="bold"
             android:id="@+id/delete"
             />

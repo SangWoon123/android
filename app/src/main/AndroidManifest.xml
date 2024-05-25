@@ -40,7 +40,8 @@
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".RandomdrawActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Memo.CalenderActivity"
             android:exported="false" />

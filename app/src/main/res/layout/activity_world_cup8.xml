@@ -10,8 +10,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/kcchanbit"
         android:layout_gravity="center"
         android:text="8강"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_marginTop="50dp"
@@ -19,7 +21,9 @@
 
     <TextView
         android:id="@+id/explain"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/kcchanbit"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
@@ -57,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 style="@style/WorldCupButtonStyle"
+                android:fontFamily="@font/kcchanbit"
                 android:text="메뉴 1 선택" />
 
         </LinearLayout>
@@ -65,17 +70,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-
-
             <ImageView
                 android:id="@+id/imageView_menu2"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/ic_launcher_background" />
 
-
             <Button
+                android:fontFamily="@font/kcchanbit"
                 android:id="@+id/button_chooseMenu2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

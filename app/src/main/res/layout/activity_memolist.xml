@@ -19,9 +19,12 @@
         >
         <Button
             android:text="리뷰추가"
+            android:fontFamily="@font/kcchanbit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/addBtn"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="16sp"
             android:layout_columnWeight="1"
             android:background="@drawable/round_button"

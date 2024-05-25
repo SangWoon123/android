@@ -44,9 +44,9 @@
         <item>TIP 지하식당</item>
     </string-array>
     <string-array name="price">
-        <item>6500원</item>
-        <item>6500원</item>
-        <item>6500원</item>
-        <item>5500원</item>
+        <item>카드 6500원 현금 6000원</item>
+        <item>카드 6500원 현금 6000원</item>
+        <item>6500원 식권 사용 가능</item>
+        <item>5500원 식권 사용 가능</item>
     </string-array>
 </resources>

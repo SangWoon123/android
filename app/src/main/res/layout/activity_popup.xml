@@ -10,7 +10,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="오늘의 \n저녁메뉴 월드컵"
+        android:text="오늘의 저녁메뉴 월드컵"
+        android:textColor="@color/black"
+        android:fontFamily="@font/kcchanbit"
         android:textAlignment="center"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -25,7 +27,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kcchanbit"
+            android:textColor="@color/primary_color"
             android:text="WINNER"
             android:textAlignment="center"
             android:textSize="25dp"
@@ -43,18 +47,17 @@
             android:id="@+id/imageText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:text="오늘의 저녁메뉴 어떠세요?"
+            android:fontFamily="@font/kcchanbit"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textStyle="bold" />
 
     </LinearLayout>
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="vertical">
@@ -64,14 +67,17 @@
             style="@style/CustomButtonStyle"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="내 주변 찾아보기" />
+            android:text="내 주변 찾아보기"
+            android:fontFamily="@font/kcchanbit"
+            />
 
         <Button
             android:id="@+id/reset"
             style="@style/CustomButtonStyle"
             android:layout_width="200dp"
+            android:fontFamily="@font/kcchanbit"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:text="다시하기" />
 
     </LinearLayout>

@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="🎉결승"
+        android:fontFamily="@font/kcchanbit"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:layout_marginTop="50dp"
         android:textStyle="bold" />
@@ -21,7 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:fontFamily="@font/kcchanbit"
         android:layout_marginTop="50dp"
+        android:textColor="@color/black"
         android:text="선호하는 저녁메뉴 선택해주세요"
         android:textSize="25dp"
         />
@@ -54,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 style="@style/WorldCupButtonStyle"
+                android:fontFamily="@font/kcchanbit"
                 android:text="메뉴 1 선택" />
 
         </LinearLayout>
@@ -78,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 style="@style/WorldCupButtonStyle"
+                android:fontFamily="@font/kcchanbit"
                 android:text="메뉴 2 선택" />
 
         </LinearLayout>
