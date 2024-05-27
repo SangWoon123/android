@@ -17,7 +17,7 @@ class RulletActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRulletBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        title = "돌림판 음식 이름"
+        title = "돌려돌려 돌림판"
 
         binding.finishBtn.setOnClickListener{
             val intent = Intent(this, RulletShowActivity::class.java)

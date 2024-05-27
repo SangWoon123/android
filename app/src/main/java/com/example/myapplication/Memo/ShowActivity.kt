@@ -20,6 +20,8 @@ class ShowActivity : AppCompatActivity() {
         binding = ActivityShowBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        title="평점 기록"
+
         db = LocalDatabase.getInstance(applicationContext)!!
 
         //이전 화면에서 전달된 제목 가져오기

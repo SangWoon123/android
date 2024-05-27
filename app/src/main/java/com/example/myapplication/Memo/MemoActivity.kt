@@ -24,6 +24,8 @@ class MemoActivity : AppCompatActivity(){
         binding = ActivityMemoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        title = "기록 입력"
+
         db = LocalDatabase.getInstance(applicationContext)!!
         date =intent.getStringExtra("date")
         binding.date.text = date

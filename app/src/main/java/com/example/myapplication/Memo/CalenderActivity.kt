@@ -27,6 +27,8 @@ class CalenderActivity : AppCompatActivity() {
         setContentView(R.layout.activity_calender)
         calendarView = findViewById(R.id.calendarview)
 
+        title="오늘의 날짜는?"
+
         // 월, 요일을 한글로 보이게 설정 (MonthArrayTitleFormatter의 작동을 확인하려면 밑의 setTitleFormatter()를 지운다)
         calendarView.setTitleFormatter(MonthArrayTitleFormatter(resources.getTextArray(R.array.custom_months)))
         calendarView.setWeekDayFormatter(ArrayWeekDayFormatter(resources.getTextArray(R.array.custom_weekdays)))
