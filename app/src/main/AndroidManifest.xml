@@ -19,9 +19,13 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".worldcup.WorldCupHelpActivity"
+            android:exported="false"
+            android:parentActivityName=".worldcup.WorldCupReady"/>
+        <activity
             android:name=".MapActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
 
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
@@ -33,15 +37,15 @@
         <activity
             android:name=".Rullet.RulletShowActivity"
             android:exported="false"
-            android:parentActivityName=".Rullet.RulletActivity"/>
+            android:parentActivityName=".Rullet.RulletActivity" />
         <activity
             android:name=".Rullet.RulletActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RandomdrawActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Memo.CalenderActivity"
             android:exported="false" />
@@ -76,30 +80,28 @@
         </activity>
         <activity
             android:name=".worldcup.PopupActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".worldcup.WorldCupResult"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
-
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".worldcup.WorldCupReady"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".worldcup.WorldCup4"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".worldcup.WorldCup8"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".worldcup.WorldCup16"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
