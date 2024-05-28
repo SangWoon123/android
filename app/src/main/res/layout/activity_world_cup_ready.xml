@@ -23,7 +23,7 @@
         android:fontFamily="@font/kcchanbit"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="저녁 메뉴 추천 월드컵에 오신 것을 환영합니다!"
+        android:text="오늘의 밥메뉴 추천 월드컵에 \n오신 것을 환영합니다!"
         android:textColor="#FF6F00"
         android:textSize="24sp"
         android:textStyle="bold" />

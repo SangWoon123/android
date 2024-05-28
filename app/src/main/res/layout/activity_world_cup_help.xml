@@ -28,7 +28,7 @@
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@color/black"
-        android:text="총 108가지의 저녁메뉴 중\n랜덤으로 16강부터 시작합니다."
+        android:text="여러가지의 메뉴 중\n랜덤으로 16강부터 시작합니다."
         android:textSize="20dp"
         />
 
@@ -43,7 +43,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="50dp"
-        android:text="저녁 메뉴 추천 월드컵은 다양한 저녁 메뉴 중에서\n 최고의 메뉴를 찾기 위한 재미있고 간단한 방법입니다! 총 108가지의 저녁메뉴 중 랜덤으로 16강부터 시작합니다."
+        android:text="밥메뉴 추천 월드컵은 다양한 저녁 메뉴 중에서\n 최고의 메뉴를 찾기 위한 재미있고 간단한 방법입니다! \n여러가지의 메뉴 중 랜덤으로 16강부터 시작합니다."
         android:textSize="15dp"
         />
 

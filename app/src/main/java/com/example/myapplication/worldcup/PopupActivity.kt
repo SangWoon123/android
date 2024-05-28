@@ -13,9 +13,7 @@ class PopupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        title="저녁 메뉴 월드 추천 월드컵"
-
-        supportActionBar?.hide()
+        title = "밥메뉴 추천 월드컵"
 
         binding = ActivityPopupBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -23,7 +21,7 @@ class PopupActivity : AppCompatActivity() {
         val imageResourceId = intent.getIntExtra("image", 0) // 기본값으로 0을 넣어줍니다.
         val menuName = intent.getStringExtra("name")
 
-        binding.imageText.setText("오늘의 저녁메뉴 $menuName 어떠세요?")
+        binding.imageText.setText("오늘의 밥메뉴 $menuName 어떠세요?")
         if (imageResourceId != 0) { // 유효한 이미지 리소스 ID인 경우에만 설정
             binding.resultImage.setImageResource(imageResourceId)
         }
@@ -38,8 +36,6 @@ class PopupActivity : AppCompatActivity() {
             //     startActivity(it)
             // }
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
-
-            finish()
         }
 
         binding.reset.setOnClickListener {

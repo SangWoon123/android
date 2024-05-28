@@ -14,7 +14,7 @@ class WorldCup8 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWorldCup8Binding.inflate(layoutInflater)
         setContentView(binding.root)
-        title = "저녁 메뉴 추천 월드컵"
+        title = "밥메뉴 추천 월드컵"
 
         // Intent로부터 전달받은 선택된 메뉴 리스트를 가져옵니다.
         intent.getParcelableArrayListExtra<Menu>("selectedMenus")?.let {

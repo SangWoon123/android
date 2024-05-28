@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">오밥추</string>
     <string name="drawer_opened">open</string>
     <string name="drawer_closed">close</string>
     <string-array name="custom_weekdays">

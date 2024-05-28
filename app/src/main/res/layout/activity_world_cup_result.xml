@@ -26,7 +26,7 @@
         android:fontFamily="@font/kcchanbit"
         android:layout_marginTop="50dp"
         android:textColor="@color/black"
-        android:text="선호하는 저녁메뉴 선택해주세요"
+        android:text="선호하는 메뉴를 선택해주세요"
         android:textSize="25dp"
         />
 

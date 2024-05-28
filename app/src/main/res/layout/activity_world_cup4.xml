@@ -14,18 +14,20 @@
         android:fontFamily="@font/kcchanbit"
         android:layout_gravity="center"
         android:text="4강"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:layout_marginTop="50dp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/explain"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:fontFamily="@font/kcchanbit"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="선호하는 저녁메뉴 선택해주세요"
+        android:text="선호하는 메뉴를 선택해주세요"
         android:textSize="25dp" />
 
     <LinearLayout

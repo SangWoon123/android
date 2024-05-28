@@ -17,8 +17,7 @@ class WorldCup16 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWorldCup16Binding.inflate(layoutInflater)
         setContentView(binding.root)
-        title = "저녁 메뉴 추천 월드컵"
-
+        title = "밥메뉴 추천 월드컵"
         menuManager = MenuManager()
         setupUI()
     }
